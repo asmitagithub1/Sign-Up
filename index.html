@@ -57,13 +57,25 @@
   margin-top: 80px;
 }
 .form-check-input {
-    border: 1px solid #00f381;
+    border: 0px solid #00f381;
 }
 .form-check-input:checked {
     background-color: #00f381;
     border-color: #00f381;
 }
 
+.form-check-input:focus {
+    border-color: #00F381;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgb(13 110 253 / 0%);
+}
+
+.btn-check:focus+.btn-light, .btn-light:focus {
+    color: #000;
+    background-color: #f9fafb;
+    border-color: #f9fafb;
+    box-shadow: 0 0 0 0rem rgb(211 212 213 / 0%);
+}
 
     </style>
   </head>
@@ -105,13 +117,27 @@
              <input type="Password" name="" placeholder="Enter Password" class="form-control input_form mt-4" style="color: #fff;" required>
             
            
-           <div class="form-check mt-4">
+          
+
+<div class="row">
+   <div class="col-6">
+     
+      <div class="form-check mt-4">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px;">
     Remember Password
   </label>
 </div>
 
+
+   </div>
+   <div class="col-6">
+
+       <p style="margin-top:26px; font-size: 12px;" class="float-end"><a style="color: #fff; text-decoration: none;" href="forget.html">Forget Password ?</a></p>
+
+     
+   </div>
+</div>
 
 
 
@@ -122,8 +148,7 @@
 
   
 
-   <p style="margin-top:10px; font-size: 12px;"><a style="color: #fff; text-decoration: none;" href="forget.html">Forget Password ?</a></p>
-
+ 
 
      </div>
    </div>
